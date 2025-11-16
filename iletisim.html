@@ -15,7 +15,6 @@
             <li><a href="index.html">Ana Sayfa</a></li>
             <li><a href="karakterler.html">Karakterler</a></li>
             <li><a href="galeri.html">Galeri</a></li>
-            <li><a href="haberler.html">Haberler</a></li>
             <li><a href="iletisim.html" class="active">İletişim</a></li>
         </ul>
     </nav>
@@ -26,15 +25,17 @@
     <h2>Bize Ulaşın</h2>
     <p>Her türlü soru, öneri ve geri bildiriminizi iletebilirsiniz.</p>
 
-    <form action="https://formsubmit.co/outlook_D2DE906AA3FF17C6@outlook.com" method="POST" class="contact-form">
+    <form name="contact" method="POST" data-netlify="true" action="/success.html" class="contact-form">
+        <input type="hidden" name="form-name" value="contact">
 
-        <input type="text" name="name" placeholder="Adınız" required>
-        <input type="email" name="email" placeholder="E-posta Adresiniz" required>
-        <textarea name="message" placeholder="Mesajınız" rows="6" required></textarea>
+        <label for="name">Ad Soyad:</label>
+        <input type="text" id="name" name="name" required>
 
-        <!-- FormSubmit ayarları -->
-        <input type="hidden" name="_captcha" value="false">
-        <input type="hidden" name="_next" value="https://ozbilginali.github.io/kcd2-fan-sites/success.html">
+        <label for="email">E-posta:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="message">Mesajınız:</label>
+        <textarea id="message" name="message" rows="6" required></textarea>
 
         <button type="submit">Gönder</button>
     </form>
@@ -47,4 +48,3 @@
 
 </body>
 </html>
-
