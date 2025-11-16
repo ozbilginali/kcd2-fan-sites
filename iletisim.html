@@ -8,41 +8,32 @@
 </head>
 <body>
 
-<header>
-    <div class="header-container">
-        <h1>Kingdom Come Deliverance 2 – İletişim</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Ana Sayfa</a></li>
-                <li><a href="karakterler.html">Karakterler</a></li>
-                <li><a href="galeri.html">Galeri</a></li>
-                <li><a href="haberler.html">Haberler</a></li>
-                <li><a href="iletisim.html" class="active">İletişim</a></li>
-            </ul>
-        </nav>
-    </div>
+<header class="navbar">
+    <div class="logo">KCD2 Fan Sitesi</div>
+    <ul class="nav-links">
+        <li><a href="index.html">Ana Sayfa</a></li>
+        <li><a href="karakterler.html">Karakterler</a></li>
+        <li><a href="galeri.html">Galeri</a></li>
+        <li><a href="haberler.html">Haberler</a></li>
+        <li><a href="iletisim.html" class="active">İletişim</a></li>
+    </ul>
 </header>
 
-<main class="contact-page">
+<main class="content contact-page">
+    <h2>İletişim</h2>
+    <p>Her türlü soru, öneri ve geri bildiriminizi bize iletebilirsiniz.</p>
 
-    <div class="contact-wrapper">
-        <h2>Bize Ulaşın</h2>
-        <p>Her türlü soru, öneri ve geri bildiriminizi iletebilirsiniz.</p>
-
-        <form action="https://formsubmit.co/cantama41@gmail.com" method="POST" class="contact-form">
-            <input type="text" name="name" placeholder="Ad Soyad" required>
-            <input type="email" name="email" placeholder="E-posta" required>
-            <textarea name="message" placeholder="Mesajınız" rows="6" required></textarea>
-            <button type="submit">Gönder</button>
-        </form>
-    </div>
-
+    <form action="https://formsubmit.co/cantama41@gmail.com" method="POST">
+        <input type="hidden" name="_next" value="success.html">
+        <input type="text" name="name" placeholder="Ad Soyad" required>
+        <input type="email" name="email" placeholder="E-posta" required>
+        <textarea name="message" placeholder="Mesajınız" rows="6" required></textarea>
+        <button type="submit">Gönder</button>
+    </form>
 </main>
 
 <footer>
-    <div class="footer-container">
-        <p>© 2025 Kingdom Come Deliverance 2 Fan Sitesi</p>
-    </div>
+    <p>© 2025 Kingdom Come Deliverance 2 Fan Sitesi</p>
 </footer>
 
 </body>
