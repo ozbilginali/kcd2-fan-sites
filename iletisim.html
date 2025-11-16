@@ -25,11 +25,15 @@
         <p>Her türlü soru, öneri ve yorumlarınızı aşağıdaki form üzerinden bize iletebilirsiniz.</p>
 
         <form action="https://formsubmit.co/cantama41@outlook.com" method="POST">
-            
-            <input type="text" name="name" placeholder="Adınız" required>
-            <input type="email" name="email" placeholder="Email" required>
-            <textarea name="message" placeholder="Mesajınız" required></textarea>
-            <button type="submit">Gönder</button>
+    <input type="text" name="name" placeholder="Adınız" required>
+    <input type="email" name="email" placeholder="E-posta" required>
+    <textarea name="message" placeholder="Mesajınız" required></textarea>
+
+    <!-- Güvenlik -->
+    <input type="hidden" name="_next" value="https://ozbilginali.github.io/kcd2-fan-sites/success.html">
+    <input type="hidden" name="_captcha" value="false">
+
+    <button type="submit">Gönder</button>
         </form>
 
         <p class="note">Not: Formu gönderdiğinizde mesajınız direkt e-posta adresinize iletilecektir.</p>
@@ -40,4 +44,5 @@
     </footer>
 </body>
 </html>
+
 
