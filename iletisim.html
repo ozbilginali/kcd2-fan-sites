@@ -7,34 +7,34 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+    <header>
+        <nav class="navbar">
+            <h1 class="logo">KCD II Fan</h1>
+            <ul class="nav-links">
+                <li><a href="index.html">Ana Sayfa</a></li>
+                <li><a href="haberler.html">Haberler</a></li>
+                <li><a href="karakterler.html">Karakterler</a></li>
+                <li><a href="galeri.html">Galeri</a></li>
+                <li><a href="iletisim.html" class="active">İletişim</a></li>
+            </ul>
+        </nav>
+    </header>
 
-<header class="navbar">
-    <div class="logo">KCD2 Fan Sitesi</div>
-    <ul class="nav-links">
-        <li><a href="index.html">Ana Sayfa</a></li>
-        <li><a href="karakterler.html">Karakterler</a></li>
-        <li><a href="galeri.html">Galeri</a></li>
-        <li><a href="haberler.html">Haberler</a></li>
-        <li><a href="iletisim.html" class="active">İletişim</a></li>
-    </ul>
-</header>
+    <section class="content">
+        <h2>İletişim</h2>
+        <p>Bizimle iletişime geçmek için aşağıdaki formu kullanabilirsiniz.</p>
 
-<main class="content contact-page">
-    <h2>İletişim</h2>
-    <p>Her türlü soru, öneri ve geri bildiriminizi bize iletebilirsiniz.</p>
+        <form>
+            <input type="text" placeholder="Adınız" required>
+            <input type="email" placeholder="E‑posta Adresiniz" required>
+            <textarea placeholder="Mesajınız" rows="5" required></textarea>
+            <button type="submit">Gönder</button>
+        </form>
 
-    <form action="https://formsubmit.co/cantama41@gmail.com" method="POST">
-        <input type="hidden" name="_next" value="success.html">
-        <input type="text" name="name" placeholder="Ad Soyad" required>
-        <input type="email" name="email" placeholder="E-posta" required>
-        <textarea name="message" placeholder="Mesajınız" rows="6" required></textarea>
-        <button type="submit">Gönder</button>
-    </form>
-</main>
+    </section>
 
-<footer>
-    <p>© 2025 Kingdom Come Deliverance 2 Fan Sitesi</p>
-</footer>
-
+    <footer>
+        <p>© 2025 Kingdom Come Deliverance 2 Fan Site | Fan yapımı içerik</p>
+    </footer>
 </body>
 </html>
